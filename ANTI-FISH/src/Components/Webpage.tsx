@@ -1,13 +1,15 @@
 import "./Webpage.css";
-import React, { useState } from "react";
-import { checkUrlSafety } from "./Api/checkUrlSafety";
+import { useState } from "react";
+import checkUrlSafety from "./Api/checkUrlSafety";
 
 function WebPage() {
   const [url, setUrl] = useState("https://");
   const [result, setResult] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
+
   async function handleCheck() {
+
     if (!url) return alert("Please enter a URL first!");
     setLoading(true);
     setResult(null);
@@ -59,9 +61,12 @@ function WebPage() {
           )}
         </div>
 
+
           <div className = "submit-div">
             Anti-Phishing Website Prototype made by BSCS Group 3 
           </div>
+
+          
 
       </div>
     </div>

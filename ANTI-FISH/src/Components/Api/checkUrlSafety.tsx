@@ -56,3 +56,5 @@ export async function checkUrlSafety(urlToCheck: string) {
   // No matches → safe but not listed
   return { safe: true, status: "not-recognized" };
 }
+
+export default checkUrlSafety
