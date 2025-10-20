@@ -7,6 +7,8 @@
     justify-content: center;
 }
 
+@media(min-width: 768px)
+{
 .design-container
 {
 display: flex;
@@ -17,6 +19,9 @@ height: auto;
 padding: 0px;
 margin: 0px;
 }
+}
+
+
 
 .header-text
 {
@@ -35,13 +40,14 @@ margin: 0px;
     padding: 0px;
     margin: 0px;
     justify-content: center;
+    
 }
 
 .link-input
 {
     font-size: 30px;
     font-family: Arial;
-    width: 500px;
+    width: 80%;
 }
 
 .link-input-button
@@ -91,3 +97,19 @@ background-color: lightcoral;
     color: royalblue;
 }
 
+.submit-div
+{
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+
+    justify-content: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}

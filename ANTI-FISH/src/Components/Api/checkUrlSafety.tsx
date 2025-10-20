@@ -1,5 +1,7 @@
+
+
 export async function checkUrlSafety(urlToCheck: string) {
-  const apiKey = "";
+  const apiKey = "AIzaSyA1EIj9O9AtKorYjyNOCPBU23RgVig3VUg";
   const apiUrl = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${apiKey}`;
 
   // ✅ LAYER 1: URL VALIDATION using URL parser

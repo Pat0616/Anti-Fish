@@ -1,6 +1,6 @@
 import "./Webpage.css";
 import React, { useState } from "react";
-import { checkUrlSafety } from "../assets/Api/checkUrlSafety";
+import { checkUrlSafety } from "./Api/checkUrlSafety";
 
 function WebPage() {
   const [url, setUrl] = useState("https://");
@@ -58,6 +58,10 @@ function WebPage() {
             <p style={{ marginTop: "20px", fontSize: "18px" }}>{result}</p>
           )}
         </div>
+
+          <div className = "submit-div">
+            Anti-Phishing Website Prototype made by BSCS Group 3 
+          </div>
 
       </div>
     </div>
